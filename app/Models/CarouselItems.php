@@ -9,7 +9,7 @@ class CarouselItems extends Model
 {
     use HasFactory;
     protected $table = 'carousel_item';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'carousel_item_id';
     protected $fillable = 
     [
         'carousel_name',
@@ -18,4 +18,4 @@ class CarouselItems extends Model
         'user_id'
     ];
 
-}
+}   
