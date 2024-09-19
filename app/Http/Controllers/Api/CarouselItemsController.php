@@ -22,7 +22,7 @@ class CarouselItemsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -47,7 +47,10 @@ class CarouselItemsController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $carouselItem = CarouselItems::findOrFail($id);
+        $carouselItem->delete();
+        
+        return $carouselItem;
     }
 
 }
