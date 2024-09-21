@@ -14,8 +14,8 @@ class CarouselItems extends Model
     [
         'carousel_name',
         'image_path',
-        'discription',
-        'user_id'
+        'description',
+        'user_id',
     ];
 
 }   
